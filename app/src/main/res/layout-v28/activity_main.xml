@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/grey"
+    tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
@@ -33,6 +34,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="212dp"
         android:layout_height="127dp"
         android:src="@drawable/img_1"
@@ -41,53 +43,55 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422"
-        />
+        app:layout_constraintVertical_bias="0.422" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="260dp"
+        android:hint="@string/enter_your_email"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/black"
         app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeColor="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp"
-        app:boxCornerRadiusTopStart="30dp"
-        app:boxCornerRadiusBottomStart="30dp"
-        app:boxCornerRadiusBottomEnd="30dp"
-        app:boxCornerRadiusTopEnd="30dp"
-        android:hint="@string/enter_your_email"
-        android:textColorHint="@color/black"
-        app:boxBackgroundMode="filled"
-        android:outlineSpotShadowColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:boxStrokeColor="@null"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/poppins_regular"/>
+            android:fontFamily="@font/poppins_regular" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="190dp"
+        android:hint="  Confirm password"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/black"
         app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeColor="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="480dp"
-        app:boxCornerRadiusTopStart="30dp"
-        app:boxCornerRadiusBottomStart="30dp"
-        app:boxCornerRadiusBottomEnd="30dp"
-        app:boxCornerRadiusTopEnd="30dp"
-        android:hint="  Confirm password"
-        android:textColorHint="@color/black"
-        app:boxBackgroundMode="filled"
-        android:outlineSpotShadowColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:boxStrokeColor="@null"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -98,56 +102,61 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="160dp"
-        android:text="Forgot Password"
-        android:textSize="15dp"
-        android:textColor="@color/yellow"
+        android:layout_marginVertical="155dp"
         android:fontFamily="@font/poppins_bold"
         android:linksClickable="true"
+        android:text="Forgot Password"
+        android:textColor="@color/yellow"
 
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="347dp"
         android:layout_height="72dp"
         android:layout_marginHorizontal="30dp"
+
         android:layout_marginVertical="80dp"
-
         android:backgroundTint="@color/yellow"
-        android:hint="Sign In"
 
+        android:fontFamily="@font/poppins_bold"
+        android:hint="Sign In"
         android:textColorHint="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/poppins_bold"
-        android:textSize="20sp"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="35dp"
-        android:text="Don't have an account?"
-        android:textSize="16dp"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppins_regular"
+        android:text="Don't have an account?"
+        android:textColor="@color/black"
+        android:textSize="16dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
-        android:text="SignUp"
-        android:textSize="16dp"
-        android:textColor="@color/yellow"
         android:fontFamily="@font/poppins_bold"
         android:linksClickable="true"
+        android:text="SignUp"
+        android:textColor="@color/yellow"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
