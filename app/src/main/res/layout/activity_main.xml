@@ -63,7 +63,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -78,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:hint="Confirm password"
+
         android:layout_marginVertical="200dp"
         android:textColorHint="@color/black"
         app:boxBackgroundColor="@color/white"
@@ -90,7 +93,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        app:boxStrokeWidth="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -121,9 +125,10 @@
 
         android:backgroundTint="@color/yellow"
         android:hint="Sign In"
-        android:textSize="20dp"
-
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_bold"
         android:textColorHint="@color/black"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -142,15 +147,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
-        android:text="SignUp"
-        android:textSize="16sp"
-        android:textColor="@color/yellow"
         android:fontFamily="@font/poppins_bold"
         android:linksClickable="true"
+        android:text="SignUp"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
