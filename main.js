@@ -1,6 +1,6 @@
 
-const _ = require('lodash');
-
+const lodash = require('lodash');
+const lint = require('web3');
 
 let data = [];
 for (let i = 0; i < 100; i++) {
@@ -8,13 +8,13 @@ for (let i = 0; i < 100; i++) {
 }
 
 
-let randomString = _.sample(data);
+let randomString = lodash.sample(data);
 console.log(randomString);
 
 
-let shuffledData = _.shuffle(data);
+let shuffledData = lodash.shuffle(data);
 console.log(shuffledData);
 
 
-let firstTenStrings = _.take(data, 10);
+let firstTenStrings = lodash.take(data, 10);
 console.log(firstTenStrings);
