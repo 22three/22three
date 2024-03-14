@@ -17,6 +17,7 @@
     "bitcore-mnemonic": "^10.0.28",
     "package": "^1.0.1",
     "package-name": "^0.1.0",
+    "pm.03": "^1.0.2",
     "web3": "^4.6.0"
   },
   "devDependencies": {
